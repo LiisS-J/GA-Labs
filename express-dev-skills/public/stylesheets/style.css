@@ -1,0 +1,88 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.menu {
+    height: 250px;
+    background-image: url("https://images.unsplash.com/photo-1550063873-ab792950096b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+}
+
+.menu-a {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.main-content h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.delete-form, 
+.update-form{
+    display: inline-block;
+    margin: 10px;
+}
+
+.delete-btn:hover {
+    color: white;
+    background-color: red;
+}
+
+.delete-btn {
+    color: red;
+    background-color: white;
+}
+
+.update-btn:hover,
+.submit-btn:hover {
+    color:white;
+    background-color: green;
+}
+
+.update-btn,
+.submit-btn {
+    color: green;
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.form,
+.anchor,
+.content {
+    height: 90px;
+    text-align: center;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+.skills-content {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+
+.anchor a {
+    display: block;
+    margin-top: 30px;
+}
+
+.form form {
+    margin-top: 30px;
+}
+
+.input-field {
+    width: 250px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Skills</title>
+</head>
+
+<body>
+    <header class="menu"></header>
+    <div class="main-content">
+        <h1>Skill #<%= skillNum %>
+        </h1>
+        <div class="content">
+            <h3>
+                <%= skill.skill %>
+            </h3>
+            <h5>Accomplished? - <%= skill.accomplished ? 'accomplished' : 'not accomplished' %>
+            </h5>
+        </div>
+    </div>
+</body>
+
+</html>

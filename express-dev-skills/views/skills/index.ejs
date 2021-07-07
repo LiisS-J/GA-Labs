@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Source+Code+Pro:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Dev Skills</title>
+</head>
+
+<body>
+    <header class="menu"></header>
+    <div class="menu-a">
+        <a href="/">function go('Home')</a>
+        <a href="/skills/new">function add('Add-a-skill')</a>
+    </div>
+    <div class="main-content">
+        <h1>Dev Skills</h1>
+        <div class="skills-content">
+            <ul>
+                <% skills.forEach(function(s, idx) { %>
+                    <li>
+                        <form action="/skills/<%= idx %>?_method=DELETE" class="delete-form" method="POST">
+                            <button type="submit" class="delete-btn">Delete</button>
+                        </form>
+                        <a href="/skills/<%= idx %>/update"><button class="update-btn">Update</button></a>
+                        <a href="/skills/<%= idx %>">
+                            <%= s.skill %>
+                        </a>
+                        -
+                        <%= s.accomplished ? 'accomplished' : 'not accomplished' %>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
