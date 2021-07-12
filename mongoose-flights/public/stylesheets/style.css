@@ -1,0 +1,40 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background: url("https://images.unsplash.com/photo-1421789497144-f50500b5fcf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80");
+    background-size: cover;
+    height: 300px;
+}
+
+main {
+    border: 1px solid rgb(74, 74, 182);
+    margin-top: 30px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table thead {
+    text-decoration: underline;
+}
+
+#ticket {
+    border: 2px solid rgb(74, 74, 182);
+    color: rgb(74, 74, 182);
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: fit-content;
+}
