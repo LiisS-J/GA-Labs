@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Mug List</h1>
+
+{% for mug in mugs %}
+<a href="{% url 'detail' mug.id %}">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ mug.name }}</span>
+      <p>Color: {{ mug.color }}</p>
+      <p>Description: {{ mug.description }}</p>
+      {% if mug.age > 0 %}
+      <p>Age: {{ mug.age }}</p>
+      {% else %}
+      <p>Age: Wet Clay</p>
+      {% endif %}
+    </div>
+  </div>
+</a>
+{% endfor %} {% endblock %}
